@@ -1,0 +1,333 @@
+body{
+    margin:0;
+    padding:0;
+    /*Os dois comandos a cima retirama  configuração de margem padrão que vem no navegador, deixando 100% da área visível para edição do css e html */
+    font-family: Arial;
+}
+
+header{
+    display:flex;
+    justify-content:center;
+    height:120px;
+}
+
+.container {
+    display:flex;
+    justify-content: space-between;
+    width:990px;
+    
+}
+
+.logo {
+    display:flex;
+    align-items:center;
+    /* 
+    Qual a diferença de usar  "align-items: center;" e usar o:
+    "flex-direction: column;
+    justify-content: center;"
+    */
+    padding:15px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul, 
+nav li {
+    list-style:none; /*retira as bolinhas da lista*/
+    margin:0px;
+    padding:0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block; /* Para que seja possível alterar tamanhos, a área do link*/
+    padding: 15px;
+    text-decoration: none; /* Tirar decoração padrão do link*/
+    text-transform: uppercase; /* Todas as letras p/ maiúsculo*/
+    color: #727272;
+}
+
+nav .active a,  /* Mudar cor de fundo do meu ativo e também ao passar o mouse em cima dos demais menus*/
+nav a:hover {
+    background-color: #20C25E ;
+    color: white;
+}
+
+/*Abaixo temos a área do banner, ele é dividido em dois grandes blocos (um em baixo do outro), e possue um imagem ao fundo. A primeira configuração que foi feita foi a da imagem, foram: inserida a img, a posição em relação a área disponível, a config. p/ que a img se adapta-se de acordo com a tamanho de tela disponível e a altura da img. Depois foram configuradas as duas áreas que compõe o banner.*/
+#banner {
+    display: flex;
+    justify-content: center;
+
+    background-image: url(../images/banner-bear.jpeg); /* Inserir img*/
+    background-position: center; /* posicionar imagem no centro independente do tamanho de tela disponível*/
+    background-size: cover; /* adaptar a imagem de acordo com o tamanho de tela disponível*/
+    height: 670px; /* Se a img não está visível talvez vc não tenha definido o heigth, só depoois de definir que a img fica visível*/
+
+}
+
+.column{
+    flex-direction: column; /*foi criada essa class p/ que o conteúdo do banner ficasse um em baixo do outro, já que no class container não existia nenhuma especificação*/
+}
+
+/* Abaixo temos as duas divisões do banner, a primeira, 'banner-headline' possue um valor não fixo, por isso foi determinado que vale 'flex:1 ', ou seja ela se adapta de acordo com a demanda do espaço que sobrar do 'banner-options', esse por sua fez possue um valor fixo.*/
+.banner-headline {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 350px; /*Essa é uma delimitação de área p/ que o texto fique com no máximo 350px de área (e o texto fique quebrado como no modelo)*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Abaixo a configuração dos títulos do banner: cor da fonte, tamanhos, sombreamento, margens internas e externas.*/
+.banner-headline h1 {
+    color: #24E06C;
+    font-size: 55px;
+    text-shadow: 0px 1px 0px #5555;
+    margin:0;
+    padding:0;
+}
+.banner-headline h2 {
+    color: white;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #5555;
+    margin:0;
+    padding: 0;
+    margin-top: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.banner-options{
+    height: 210px;
+    display: flex;
+}
+
+.options1, 
+.options2,
+.options3 {
+    flex:1;
+    color: white; /*cor da letra */
+    padding: 20px;
+}
+
+.options1{
+    background-color: #24E06C;
+}
+.options2{
+    background-color: #20C25E;
+}
+.options3{
+    background-color: #2D6141;
+}
+
+.options-title{
+    font-size: 21px;
+}
+.options-disc{
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.options-button{
+    border: 1px solid white;
+    padding: 5px;
+    display: inline-block; /* Faz com que a área se ajuste ao conteúdo*/
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+    /*SOZINHA DAQUI*/
+.options-disc-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.options-disc-bar{
+    width: 300px;
+    height: 1px;
+    background-color: #20C25E;
+    margin-top: 10px;
+}
+    /*SOZINHA ATÉ AQUI*/
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+#geral section{
+    flex:2;
+    display: flex;
+}
+
+#geral aside {
+    flex:1;
+}
+
+.widget-title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.widget-title-text{
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.widget-title-bar{
+    width: 50px;
+    height: 2px;
+    background-color:#20C25E;
+    margin-top: 10px;
+}
+.widget-body{
+    display: flex;
+    justify-content: space-around;
+}
+
+.widget-body-cub{
+    height:130px;
+    width:130px;
+    background-color:#20C25E ;
+    margin-top: 30px;
+}
+
+.widget-body2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.contact{
+    margin-top: 20px;
+}
+
+.contact-item{
+    display: flex;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+address img {
+    margin-right: 10px;
+}
+.contact-item-bar{
+    width: 300px;
+    height: 1px;
+    background-color: #dddddd;
+    margin-top: 10px;
+}
+
+.flex{
+    display: flex; /* Não precisava, mas só para constar*/
+    flex-wrap: wrap; /* Tornando o os artigos responsivos, dando a liberdade deles quebrarem caso a tela diminua*/
+}
+
+article{
+    flex:1; /* dizer que todos os artigos são do mesmo tamanho*/
+    min-width: 300px; /*Tamanho mínimo do artigo*/
+    margin-right: 20px;
+}
+
+article a{
+    text-decoration: none;
+}
+article .news-data {
+    display: flex;
+}
+
+article .news-post-data {
+    background-color: #2D6141;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+article .news-comments{
+    background-color: #20C25E;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+
+article .news-thumbnail{
+    margin-top: 30px;
+}
+
+article .news-thumbnail img{
+    width: 100%;
+    height: auto;
+}
+
+ article .news-title {
+     margin-top: 25px;
+     margin-bottom: 25px;
+     font-size: 21px;
+     color: black;
+ }
+
+article .news-resume {
+    color: #5c5c5c;
+    font-size: 14px;
+    line-height: 20px; /* espaçamento entre linhas*/
+    margin-bottom: 30px;
+}
+
+footer{
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu{
+    display: flex;
+}
+
+.fm-1,
+.fm-2,
+.fm-3 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+
+.fm-1{
+    background-color: #24E06C;
+}
+.fm-2{
+    background-color: #20C25E;
+}
+.fm-3{
+    background-color: #2D6141;
+}
+
+.footer-area{
+    display: flex;
+    color: white;
+}
+
+footer .widget-title-text{
+    color: white;
+}
+.footer-area-item{
+    flex: 1;
+}
+
+.footer-copie{
+    border-top: 1px solid #2c2c2c; /*Linha na parte de cima - genial, muito melhor que uma a footer-copie-bar, menos 4 linhas de código*/
+    height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+    line-height: 40px;  /* Centraliza o texto ao centro da div*/
+}
