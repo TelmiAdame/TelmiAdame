@@ -1,6 +1,6 @@
 ## Olá, eu sou a Telmi Adame!
 
-- 👩‍💻 Hoje trabalho com front-end
+- 👩‍💻 Hoje sou estudante de front-end
 - 🌱 Estudando Angular/Typescript
 - 📫 Contate-me no e-mail: telmiarquit@hotmail.com
 - 🌞 Pronomes: ela/dela
