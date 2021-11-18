@@ -55,7 +55,7 @@ nav a {
 
 nav .active a,  /* Mudar cor de fundo do meu ativo e também ao passar o mouse em cima dos demais menus*/
 nav a:hover {
-    background-color: #20C25E ;
+    background-color: #2d6141 ;
     color: white;
 }
 
@@ -64,7 +64,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
 
-    background-image: url(../images/banner-bear.jpeg); /* Inserir img*/
+    background-image: url(../images/banner.jpg); /* Inserir img*/
     background-position: center; /* posicionar imagem no centro independente do tamanho de tela disponível*/
     background-size: cover; /* adaptar a imagem de acordo com o tamanho de tela disponível*/
     height: 670px; /* Se a img não está visível talvez vc não tenha definido o heigth, só depoois de definir que a img fica visível*/
@@ -87,14 +87,14 @@ nav a:hover {
 
 /* Abaixo a configuração dos títulos do banner: cor da fonte, tamanhos, sombreamento, margens internas e externas.*/
 .banner-headline h1 {
-    color: #24E06C;
+    color: #2d6141;
     font-size: 55px;
     text-shadow: 0px 1px 0px #5555;
     margin:0;
     padding:0;
 }
 .banner-headline h2 {
-    color: white;
+    color: #2b2a2a;
     font-size: 21px;
     text-shadow: 0px 1px 0px #5555;
     margin:0;
@@ -153,10 +153,10 @@ nav a:hover {
 .options-disc-bar{
     width: 300px;
     height: 1px;
-    background-color: #20C25E;
+    background-color: #4b857e;
     margin-top: 10px;
 }
-    /*SOZINHA ATÉ AQUI*/
+    
 
 #geral {
     display: flex;
@@ -198,7 +198,7 @@ nav a:hover {
 .widget-body-cub{
     height:130px;
     width:130px;
-    background-color:#20C25E ;
+    background-color:#2d6141 ;
     margin-top: 30px;
 }
 
