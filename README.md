@@ -1,7 +1,7 @@
 ## Olá, eu sou a Telmi Adame!
 
 - 👩‍💻 Desenvolvedora front-end
-- 🌱 Estudando Angular/ Typescript / SASS
+- 🌱 Estudando React/ SASS
 - 📫 Contate-me no e-mail: telmiarquit@hotmail.com
 - 🌞 Pronomes: ela/dela
 
