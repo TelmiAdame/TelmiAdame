@@ -1,7 +1,7 @@
 ## Olá, eu sou a Telmi Adame!
 
 - 👩‍💻 Desenvolvedora front-end
-- 🌱 Estudando VueJs
+- 🌱 Estudando VueJs e React
 - 📫 Contate-me no e-mail: telmiarquit@hotmail.com
 - 🌞 Pronomes: ela/dela
 
